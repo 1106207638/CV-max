@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 9000px;
+      height: 400px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
+        margin: 0;
+      }
+    }
+  </style>
+  <style>
+    img {
+      width: 120px;
+      height: 120px;
+      padding: 8px;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row
+    }
+  </style>
+  <style type="text/css">
+    p {
+      text-indent: 0.5em
+    }
+
+    .qqq {
+      border-bottom: 20px solid rgb(255, 255, 255);
+      border-top: 6px solid rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>秦旭旸</h1>
+
+      <p>
+        男 | 24岁 | 前端开发工程师 | 北京
+      </p>
+      <p>
+        手机：17602600042 | 微信：17602600042 | 邮箱：1106207638@qq.com
+      </p>
+
+    </section>
+
+
+
+
+    <hr>
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>极简记账(扫描二维码预览)</h3>
+            <span>
+              <a href="https://github.com/1106207638/jijianjizhang">源码链接</a>
+              <a href="http://qin-xuyang.gitee.io/jizhang-website">项目预览</a>
+            </span>
+          </header>
+          <div class="flex">
+            <div>
+              <p>
+                一款基于 <strong>Vue</strong> / <strong>TypeScript</strong> /
+                <strong>VueRouter</strong> / <strong>Vuex</strong>
+                实现的一款单页面记账应用。
+
+              </p>
+              <p>
+                该应用从自身需求出发，特点是实现了复杂信息保存、标签管理、数据统计展示功能以及全部使用代码模块化思想实现功能
+              </p>
+              <p>
+                制作过程让我对 TypeScript 有了新的认识，并且养成了我使用模块化思想写代码的习惯，使得我的代码简洁明了、易于维护。
+              </p>
+            </div>
+            <img src="极简记账.png" class="img">
+
+          </div>
+
+        </li>
+        <li>
+          <header>
+            <h3>极简PPT</h3>
+            <span>
+              <a href="#">源码私有</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是一个基于 <strong>原生JS</strong> / <strong>svg-symbols</strong> / <strong>LeanCloud</strong> /
+            <strong>localstorage</strong>的在线制作PPT应用。
+          </p>
+          <p>
+            项目基于开源项目ONESLIEDE改进而成，使用 <strong>MarkDowm</strong> 方式书写PPT，并且使用 <strong>LeanCloud</strong>
+            云服务储存图片，实现了上传图片的功能。
+          </p>
+          <p>
+            <strong>首页鼠标浮向左上角，点击图标进入菜单</strong>(格式：标题为#或##水平翻页，标题为###上下翻页)
+          </p>
+        </li>
+      </ol>
+    </section>
+
+
+
+
+    <hr>
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <ul>
+          <li>熟练掌握 <strong>HTML5</strong> ，能够使用 <strong>HTML5</strong> 标签编写<strong>语义化</strong>的页面 </li>
+          <li>熟练掌握 <strong>CSS / SCSS</strong> ,熟悉页面制作技巧，能将设计稿完美还原</li>
+          <li>熟练掌握原生 <strong>JavaScript ，ES6语法</strong>，DOM操作，闭包，<strong>原型</strong>，<strong>this</strong>
+            ，<strong>TypeScript</strong> 的使用方法</li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、JSONP 前端路由等</li>
+          <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>掌握 <strong>Git / GitHub</strong> 工作部署流程</li>
+          <li>了解 <strong>Webpack 的配置和优化</strong></li>
+          <li>曾系统学习<strong>产品经理</strong>，工作对接、需求实现等工作更加得心应手</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <hr>
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>自己写的 DOM 库</h3>
+            <a href="https://github.com/1106207638/DOM-">源码链接</a>
+          </header>
+          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>画个皮卡丘</h3>
+            <span>
+              <a href="https://github.com/1106207638/-pikaqiu">源码链接</a>
+              <a href="http://qin-xuyang.gitee.io/pikaqiu/">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>CSS3和JS</strong> 时写的一个动态显示CSS画出一个皮卡丘过程的小作品。主要思路是使用 <strong>setInterval</strong>
+            延时显示CSS代码，并且可以通过按钮控制显示速度，从而使CSS代码生效</p>
+        </li>
+        <li>
+          <header>
+            <h3>小画板</h3>
+            <span>
+              <a href="https://github.com/1106207638/canvas-huaban">源码链接</a>
+              <a href="http://qin-xuyang.gitee.io/canvas-huaban/">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 标签时制作的简易画板，可以更换画笔颜色，可以擦除颜色。</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="others">
+      <hr>
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://juejin.cn/user/3245414491895373">我的博客</a>，目前已有 19 篇技术文章，持续更新中</li>
+        <li class="qqq"><a href="https://github.com/1106207638">我的 GitHub</a>，平均一周5次提交</li>
+
+      </ul>
+
+    </section>
+
+    <section class="education">
+      <hr>
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2015年</time>~<time>2018年</time></span>
+        天津石油职业技术学院 生产过程自动化 专科
+      </p>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
